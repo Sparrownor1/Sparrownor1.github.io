@@ -2,8 +2,8 @@
 
 My name is Sachit Lumba.
 
-1. linkedin.com/in/sachitlumba
-1. github.com/Sparrownor1
+1. [my LinkedIn](linkedin.com/in/sachitlumba)
+1. [my GitHub](github.com/Sparrownor1)
 
 <!---
 ## Welcome to GitHub Pages
