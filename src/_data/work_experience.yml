@@ -1,0 +1,35 @@
+- name: Fincent
+  title: Full-stack Developer
+  duration: June - August 2021
+  details:
+    - Designed and built a customer service portal for the Fincent web app
+    - Built and updated an ExpressJS backend along with a React Material UI Frontend
+    - Incorporated AWS CloudWatch Logs from the main Fincent App for use by customer service
+      agents and ticketing management using the API for Linear
+    - Collaborated on the main Fincent web app, writing code to enhance the software and fix bugs
+
+- name: Dubai College
+  title: Teacher
+  duration: June 2021
+  details:
+    - Independently taught a mini-course on the basics of functional programming for Grade 11
+      Computer Science students
+    - Delivered 4 hour-long lessons to 2 separate class sections, designing lesson plans for each
+    - Covered the topics of higher-order functions and lists in Standard ML
+
+- name: Li2 Innovations
+  title: Programmer
+  duration: July - August 2019
+  details:
+    - Learnt the basics of C and C++, and implemented fundamental image processing algorithms
+      using OpenCV
+    - Built a Python OpenCV security camera project which involved image processing, facial
+      recognition, and video transmission
+    - Image thresholding, background subtraction, motion detection, face detection, TCP/UDP
+      data transmission
+
+- name: Private Computer Science Tutor
+  duration: February - April 2019
+  details:
+    - Planned and conducted weekly computer science lessons for two students, covering
+      problem-solving techniques and basic Python programming.
