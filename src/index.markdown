@@ -4,3 +4,10 @@
 
 layout: home
 ---
+
+<h2>Hello! My name is Sachit Lumba</h2>
+
+<h3>
+Some of my interests include:
+building useful things, also building not-so-useful things, writing clean code, playing music, writing, and gaming.
+</h3>
