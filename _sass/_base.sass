@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500&display=swap')
-
-$font-stack: 'Roboto Mono Regular', monospace
-
-$font-regular: $font-stack
-$font-medium: 'Roboto Mono Medium', monospace
-
-$background-colour: #101820
-$main-colour: #EEDAEA
-$sub-colour: #CF6BDD
-$background-extra-colour: #6744A1
+@import 'colors'
+@import 'typography'
 
 $transition: all 0.3s ease 0s
 
@@ -22,7 +13,8 @@ html, body
   overflow: auto
 
 body 
-  background-color: $background-colour
+  background-color: $background 
+  font: 100% $font-stack
 
 p, a
   text-decoration: none
@@ -32,6 +24,10 @@ a, .logo
 
 h1
   font-weight: 400
+
+@media screen and (max-width: 768px) 
+  h1
+    font-size: 18px
 
 main
   height: 100%
@@ -51,21 +47,18 @@ nav
 
 .links
   a
-    font: 100% $font-medium
     font-size: 20px
-    margin-right: 50px
-    color: $main-colour
+    margin: 0 25px
+    color: $main
     transition: $transition
   
   a:hover
-    color: $sub-colour
+    color: $sub
 
 .info
   grid-column: 2 / span 6
 
-  font: 100% $font-regular
-  font-weight: 400
-  color: $sub-colour
+  color: $sub
 
   display: grid
   grid-template-columns: repeat(6, minmax(50px, 190px)) 
@@ -83,14 +76,15 @@ footer
   align-self: end
   min-height: 150px
 
-  background-color: $background-extra-colour
+  background-color: $background-extra
 
 @media screen and (max-width: 768px)
   footer
     grid-column: 1 / span 8
+    min-height: 120px
 
 .icon-row
-  padding: 40px 30px 40px 30px
+  padding: 40px 30px
   max-width: 650px
 
   display: flex
@@ -101,12 +95,12 @@ footer
 @media screen and (max-width: 768px)
   .icon-row
     margin: 0 auto
-    padding: 40px 0px 40px 0px
+    padding: 40px 0px
 
 .icon
   height: 70px
   width: 70px
-  background-color: $main-colour
+  background-color: $main
   border-radius: 50%
   transition: $transition
 
@@ -116,7 +110,7 @@ footer
 
   font-size: 30px
   line-height: 30px
-  color: $background-colour
+  color: $background
 
   a
     color: inherit
@@ -125,8 +119,19 @@ footer
   height: 80px
   width: 80px
   margin: -10px 0 -10px 0
-  background-color: $sub-colour
+  background-color: $hover
   font-size: 35px
   line-height: 35px
-  color: $main-colour
+  color: $main
   transition: 0.2s ease
+
+@media screen and (max-width: 768px)
+  .icon
+    height: 55px
+    width: 55px
+    font-size: 25px
+
+  .icon:hover
+    height: 65px
+    width: 65px
+    font-size: 30px
