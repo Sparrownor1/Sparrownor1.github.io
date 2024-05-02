@@ -31,7 +31,6 @@ github_username: Sparrownor1
 # theme: minima
 plugins:
   # - jekyll-feed
-  - jekyll-coffeescript
 
 sass:
   style: compact
