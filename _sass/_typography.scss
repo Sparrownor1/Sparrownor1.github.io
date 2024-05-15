@@ -1,12 +1,36 @@
+$bgcolor: #F5F0E1;
+$fontcolor: #333333;
+$accentcolor1: #8B4513;
+$accentcolor2: #DEB887;
+
 body {
-    font-size: 18px;
+    font-family: 'Merriweather';
     line-height: 1.5;
-    color: #24292e;
-    background-color: #fff;
+    color: $fontcolor;
+    background-color: $bgcolor;
+    margin: 0 auto;
 }
 
-a {
-    color: #0366d6;
+h1 {
+    font-weight: medium; // between normal and medium
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+header {
+    margin: 0.9375em 0;
+}
+
+p { 
+    margin: 0 auto;
+}
+
+.links {
+    a {
+        text-decoration: none;
+        color: $accentcolor1;
+        margin-right: 0.5em;
+    }
 }
 
 code,
