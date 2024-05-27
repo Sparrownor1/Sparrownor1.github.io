@@ -12,12 +12,19 @@ body {
 }
 
 h1 {
-  font-weight: medium; // between normal and medium
+  font-weight: 600; // between normal and medium
   font-size: 1.2em;
   margin-bottom: 0;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 0.4em 0;
+}
+
 h5 {
+  font-size: 0.9em;
   margin: 0.4em 0;
 }
 
@@ -27,7 +34,7 @@ header {
 
 p {
   max-width: 75ch;
-  margin: 0;
+  margin: 0.2em 0;
 }
 
 ul {
@@ -44,10 +51,6 @@ nav a {
   margin-right: 0.5em;
 }
 
-.whoami {
-  margin: 0.9375em auto;
-}
-
-.whereami {
+.content-block {
   margin: 0.9375em auto;
 }
