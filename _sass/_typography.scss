@@ -1,0 +1,56 @@
+$bgcolor: #f5f0e1;
+$fontcolor: #333333;
+$accentcolor1: #8b4513;
+$accentcolor2: #deb887;
+
+body {
+  font-family: "Merriweather";
+  line-height: 1.5;
+  color: $fontcolor;
+  background-color: $bgcolor;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 600; // between normal and medium
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 0.4em 0;
+}
+
+h5 {
+  font-size: 0.9em;
+  margin: 0.4em 0;
+}
+
+header {
+  margin: 0.9375em 0;
+}
+
+p {
+  max-width: 75ch;
+  margin: 0.2em 0;
+}
+
+ul {
+  list-style-type: square;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $accentcolor1;
+}
+
+nav a {
+  margin-right: 0.5em;
+}
+
+.content-block {
+  margin: 0.9375em auto;
+}

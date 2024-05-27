@@ -1,12 +1,44 @@
 ---
 layout: default
+title: sachit lumba
 ---
 
-<h1 class="info-c1">Hello, welcome to my page</h1>
-<h1 class="info-c1">I like to code, design, and innovate</h1>
-<h1 class="info-c2">
-  I’m also into making music, gaming, training, and writing
-</h1>
-<h1 class="info-c3">
-  Find out more about these below, or download my resume from above
-</h1>
+<div class="content-block">
+  <h5>whoami</h5>
+  <p>Hi! I'm Sachit.</p>
+  <p>
+    I'm a software engineer at Apple, where I work on
+    <a href="https://en.wikipedia.org/wiki/Darwin_(operating_system)">Darwin</a
+    >.
+  </p>
+  <p>
+    I graduated from Carnegie Mellon University in 2024 with a Bachelor's in
+    Computer Science, where I studied systems, AI/ML, algorithms, and
+    probability.
+  </p>
+  <p>I also enjoy reading, music, video games, and sport.</p>
+</div>
+
+<div class="content-block">
+  <h5>cat contact-me</h5>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/sachitlumba/">linkedin</a></li>
+    <li><a href="mailto:sachitlumba@gmail.com">mail</a></li>
+    <li><a href="https://github.com/Sparrownor1">github</a></li>
+    <li><a href="https://x.com/Sparrownor1">x (formerly twitter)</a></li>
+    <!-- TODO: goodreads -->
+  </ul>
+</div>
+{% if site.posts.size > 0 %}
+<div class="content-block">
+  <h5>ls posts</h5>
+  <ul>
+    <!-- TODO: top 5 posts here -->
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
