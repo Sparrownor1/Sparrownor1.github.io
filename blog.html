@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog - Sachit Lumba
+---
+
+<div class="content-block">
+{% if site.posts.size > 0 %}
+  <h5>$ ls blogposts</h5>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }} - </a><i>{{ post.date | date: "%-d %B %Y" }}</i>
+    </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Perhaps you should bother me to write something!</p>
+{% endif %}
+</div>

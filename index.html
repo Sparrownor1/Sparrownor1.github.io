@@ -1,15 +1,18 @@
 ---
 layout: default
-title: sachit lumba
+title: Sachit Lumba
 ---
 
 <div class="content-block">
   <h5>$ whoami</h5>
   <p>Hi! I'm Sachit.</p>
   <p>
-    I'm a software engineer at Apple, where I work on
-    <a href="https://en.wikipedia.org/wiki/Darwin_(operating_system)">Darwin</a
-    >.
+    I'm a software engineer at <a href="https://instinct.com">Instinct</a>.
+  </p>
+  <p>
+    While at Apple, I worked on
+    <a href="https://en.wikipedia.org/wiki/Darwin_(operating_system)">Darwin</a> 
+    (more specifically, the Secure Exclave).
   </p>
   <p>
     I graduated from Carnegie Mellon University in 2024 with a Bachelor's in
@@ -31,12 +34,11 @@ title: sachit lumba
 </div>
 {% if site.posts.size > 0 %}
 <div class="content-block">
-  <h5>ls posts</h5>
+  <h5>$ ls blogposts | head -5</h5>
   <ul>
-    <!-- TODO: top 5 posts here -->
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 5 %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }} - </a><i>{{ post.date | date: "%-d %B %Y" }}</i>
     </li>
     {% endfor %}
   </ul>
