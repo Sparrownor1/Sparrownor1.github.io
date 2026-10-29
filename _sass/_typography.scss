@@ -23,6 +23,12 @@ h2 {
   margin: 0.4em 0;
 }
 
+h3 {
+  font-weight: 400;
+  font-size: 1.05em;
+  margin: 0.4em 0;
+}
+
 h5 {
   font-size: 0.9em;
   margin: 0.4em 0;
@@ -34,7 +40,7 @@ header {
 
 p {
   max-width: 75ch;
-  margin: 0.2em 0;
+  margin: 0.4em 0;
 }
 
 ul {
@@ -51,6 +57,33 @@ nav a {
   margin-right: 0.5em;
 }
 
+blockquote {
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 1em;
+  border-left: 3px solid #ccc;
+}
+
 .content-block {
   margin: 0.9375em auto;
+}
+
+// table {
+//   border-collapse: collapse;
+// }
+
+table, th, td {
+  border: 0.5px solid;
+}
+
+th, td {
+  padding: 0.3em 0.3em;
+}
+
+hr {
+  border: none;          /* Removes the default shaded border */
+  height: 1.5px;           /* Sets the thickness of the line */
+  background-color: #9d9d9d;
+  width: 100%;           /* Spans the full width of its container */
+  margin-top: 1.5em;
 }
